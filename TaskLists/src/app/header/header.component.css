@@ -1,0 +1,16 @@
+.flexDisplay {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flexDisplay span {
+  margin: 0 0 0 90px;
+}
+
+.flexDisplay a {
+  margin: 0 90px 0 0;
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+}
