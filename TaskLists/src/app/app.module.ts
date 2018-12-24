@@ -1,21 +1,25 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { TableComponent } from './table/table.component';
 /* Material design */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatInputModule} from '@angular/material/input';
+/* End MD */
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { HeaderComponent } from './header/header.component';
+import { TableComponent } from './table/table.component';
+import { SideNewBarComponent } from './side-new-bar/side-new-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TableComponent
+    TableComponent,
+    SideNewBarComponent
   ],
   imports: [
     BrowserModule,
@@ -25,7 +29,8 @@ import {MatSidenavModule} from '@angular/material/sidenav';
     MatCheckboxModule,
     MatToolbarModule,
     MatTableModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

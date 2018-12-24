@@ -1,23 +1,33 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-drawer-container class="example-container" autosize>
 <app-header></app-header>
-
-
-    <mat-drawer #drawer class="example-sidenav" mode="over">
-      <p>Добавление задачи</p>
-
-      <button mat-raised-button color="accent">
-        Добавить задачу
-      </button>
-    </mat-drawer>
+  <mat-drawer #drawer class="example-side row" mode="over">
+      <div class="col-md-12" style="justify-content: center">
+        <div class="col-auto">
+          <p>Добавление задачи</p>
+        </div>
+          <div class="col-md-12">
+            <div id="wrongSim" class="wrongSim" style="visibility: hidden">Введен недопустимый символ " ! "</div>
+            <mat-form-field class="example-full-width col-auto">
+              <textarea onkeyup="valediction()" rows="6" matInput placeholder="Текст задачи..." id="name"></textarea>
+            </mat-form-field>
+          </div>
+        <div class="row" style="justify-content: center">
+          <div class="col-auto">
+            <button id="submit" mat-raised-button color="accent" disabled>
+              Добавить задачу
+            </button>
+          </div>
+        </div>
+      </div>
+  </mat-drawer>
   <div class="mainBut">
-    <div class="example-sidenav-content">
+    <div class="example-side-content">
       <button type="button" mat-button (click)="drawer.toggle()" mat-raised-button color="accent">
         Добавить новую задачу
       </button>
     </div>
   </div>
-
 <h2>Here are some links to help you start: </h2>
 <ul>
   <li>

@@ -1,3 +1,10 @@
+.example-container {
+  background: white;
+}
+.example-full-width {
+  max-height: 200px;
+  width: 100%;
+}
 .mainBut {
   text-align: center;
 }
@@ -6,24 +13,20 @@
   margin: 20px;
 }
 
-.example-container {
-
-  border: 1px solid rgba(0, 0, 0, 0.5);
-}
-
-.example-sidenav-content {
+.example-side-content {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.example-sidenav {
+.example-side {
   padding: 20px;
   width: 300px;
 }
 
-.example-sidenav p{
+.example-side p{
   text-align: center;
   margin: 10px 10px;
 }
+
