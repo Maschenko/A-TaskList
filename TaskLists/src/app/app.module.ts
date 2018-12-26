@@ -13,13 +13,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TableComponent } from './table/table.component';
 import { SideNewBarComponent } from './side-new-bar/side-new-bar.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TableComponent,
-    SideNewBarComponent
+    SideNewBarComponent,
+    AddTaskComponent
   ],
   imports: [
     BrowserModule,
