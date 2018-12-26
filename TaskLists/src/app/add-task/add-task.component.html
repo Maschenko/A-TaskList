@@ -1,3 +1,20 @@
-<p>
-  add-task works!
-</p>
+<div class="row col-md-12" style="justify-content: center">
+<div class="col-auto">
+  <p>Добавление задачи</p>
+</div>
+<div class="col-md-12">
+  <div class="row" style="justify-content: center">
+  <mat-form-field class="example-full-width col-md-12">
+    <textarea matInput placeholder="Текст задачи" [formControl]="taskValue" required minlength="2" pattern="[^!]*"></textarea>
+    <mat-error *ngIf="taskValue.invalid">{{getErrorMessage()}}</mat-error>
+  </mat-form-field>
+  </div>
+</div>
+<div class="row" style="justify-content: center">
+  <div class="col-auto">
+    <button type="submit" id="submit" mat-raised-button color="accent" disabled="disabled">
+      Добавить задачу
+    </button>
+  </div>
+</div>
+</div>
