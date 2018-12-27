@@ -6,22 +6,11 @@
   </mat-drawer>
   <div class="mainBut">
     <div class="example-side-content">
-      <button type="button" mat-button (click)="drawer.toggle()" mat-raised-button color="accent">
+      <button type="button" (click)="drawer.toggle()" mat-raised-button color="accent">
         Добавить новую задачу
       </button>
     </div>
   </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+  <app-table></app-table>
 </mat-drawer-container>
 <router-outlet></router-outlet>

@@ -15,6 +15,7 @@ import { HeaderComponent } from './header/header.component';
 import { TableComponent } from './table/table.component';
 import { SideNewBarComponent } from './side-new-bar/side-new-bar.component';
 import { AddTaskComponent } from './add-task/add-task.component';
+import { TaskTableComponent } from './task-table/task-table.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddTaskComponent } from './add-task/add-task.component';
     HeaderComponent,
     TableComponent,
     SideNewBarComponent,
-    AddTaskComponent
+    AddTaskComponent,
+    TaskTableComponent
   ],
   imports: [
     BrowserModule,

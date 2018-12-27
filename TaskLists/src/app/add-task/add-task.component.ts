@@ -15,11 +15,9 @@ export class AddTaskComponent implements OnInit {
   taskValue = new FormControl('', [Validators.minLength(3), Validators.pattern('[^!]*')]);
 
   getErrorMessage() {
-    if (this.taskValue.status == true) {
-      document.getElementById('submit').removeAttribute('disabled');
-    }
-    return this.taskValue.hasError('minLength') ? 'Необходимо ввести более 2-х символов' : this.taskValue.hasError('pattern') ? 'Введен недопустимый символ "!"' : '';
+      return this.taskValue.hasError('minLength') ? 'Необходимо ввести более 2-х символов' : this.taskValue.hasError('pattern') ? 'Введен недопустимый символ "!"' : '';
   }
+
   constructor() {}
 
   ngOnInit() {}
